@@ -1,0 +1,16 @@
+{
+  "name": "알로하, 이웃의 지혜",
+  "short_name": "이웃의 지혜",
+  "description": "하와이 노을과 함께 만나는 비공식 창작 히어로 명언",
+  "lang": "ko",
+  "start_url": "./#/today",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#060a14",
+  "theme_color": "#091126",
+  "icons": [
+    { "src": "./assets/icons/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./assets/icons/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./assets/icons/app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

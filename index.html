@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#091126">
+  <meta name="description" content="하와이의 노을과 함께 만나는 비공식 창작 히어로 명언 30선">
+  <title>알로하, 이웃의 지혜</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/app-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles/tokens.css">
+  <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+  <a class="skip-link" href="#app-main">본문으로 건너뛰기</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#/today" aria-label="오늘 화면으로 이동">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span><strong>알로하, 이웃의 지혜</strong><small>HAWAII EDITION</small></span>
+      </a>
+      <button class="icon-button" id="theme-quick" type="button" aria-label="테마 바꾸기" title="테마 바꾸기">☾</button>
+    </header>
+
+    <main id="app-main" tabindex="-1">
+      <div class="loading-state" id="loading"><span class="spinner" aria-hidden="true"></span><p>명언을 불러오는 중이에요</p></div>
+    </main>
+
+    <nav class="bottom-nav" aria-label="주요 메뉴">
+      <a href="#/today" data-route="today"><span aria-hidden="true">☀</span><span>오늘</span></a>
+      <a href="#/quotes" data-route="quotes"><span aria-hidden="true">⌕</span><span>명언집</span></a>
+      <a href="#/favorites" data-route="favorites"><span aria-hidden="true">♥</span><span>즐겨찾기</span><b id="favorite-badge" hidden>0</b></a>
+      <a href="#/settings" data-route="settings"><span aria-hidden="true">⚙</span><span>설정</span></a>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="backup-file" type="file" accept="application/json,.json" hidden>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
